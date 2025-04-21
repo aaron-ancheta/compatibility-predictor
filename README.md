@@ -39,4 +39,4 @@ In order to run this program, you first need to install Go in your system. You c
 
 Once you installed GO, this project directory already includes `input.json` file which contains the sample JSON from the project description.
 
-To run the program, open a terminal and run `go run main.go`.
+To run the program, make sure you're inside the project directory, then open a terminal, and run `go run main.go`.
