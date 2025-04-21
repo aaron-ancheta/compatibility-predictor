@@ -11,7 +11,7 @@ score. How the compatibility score is generated is up to you. Help us make the r
 ### Initial Approach
 
 Initially, I didn't know what makes an applicant suited or "fit" for a team, so I decided to do a research.
-I came across <a href="https://www.qic-wd.org/umbrella-summary/employee-fit">Employee Fit</a> and I learned that
+I came across <a target="_blank" href="https://www.qic-wd.org/umbrella-summary/employee-fit">Employee Fit</a> and I learned that
 compatability is not solely about just being similar to the team (vibe), but also about contributing on what the current team lacks.
 This concept is known in organizational psychology as Supplementary fit (having the same vibe with the team) and Complementary Fit (filling the gaps of the team) (Kristof-Brown et al., 2005).
 
@@ -19,7 +19,7 @@ This concept is known in organizational psychology as Supplementary fit (having 
 
 With this in mind, I wanted to use both approaches to implement my `Compatibility Predictor`.
 
-I came accross a <a href="https://stackoverflow.com/questions/10561700/skill-matching-algorithm#:~:text=A%20more%20accurate%20method%20for,coordinate%20to%20the%20passed%20in">Stack Overflow forum</a> which discusses skill matching algorithm that uses Euclidean Distance. And so, I incorporated this to the first part of my implementation (Supplementary fit) by calculating the Average Fit Score of each applicant using Euclidean Distance.
+I came accross a <a target="_blank" href="https://stackoverflow.com/questions/10561700/skill-matching-algorithm#:~:text=A%20more%20accurate%20method%20for,coordinate%20to%20the%20passed%20in">Stack Overflow forum</a> which discusses skill matching algorithm that uses Euclidean Distance. And so, I incorporated this to the first part of my implementation (Supplementary fit) by calculating the Average Fit Score of each applicant using Euclidean Distance.
 
 To calculate `Average Fit Score`, I first calculated the team's centroid (the average values for each attribute across all team members) to where the Euclidean Distance (how far an applicant's attributes are from the team's centroid) is going to be calculated from. After getting the Euclidean Distances of each applicant, I normalized the results in order to get an easier set of data to work with by using `1 - distance / max distance`.
 
@@ -35,7 +35,7 @@ I decided to use GO (or GoLang) to implement this project because I became more 
 
 ### How to run the program
 
-In order to run this program, you first need to install Go in your system. You can follow the instructions on how to install Go in this <a href="https://go.dev/doc/install">documentation</a> they provided.
+In order to run this program, you first need to install Go in your system. You can follow the instructions on how to install Go in this <a target="_blank" href="https://go.dev/doc/install">documentation</a> they provided.
 
 Once you installed GO, this project directory already includes `input.json` file which contains the sample JSON from the project description.
 
